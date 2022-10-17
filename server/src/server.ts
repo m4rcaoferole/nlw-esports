@@ -9,16 +9,16 @@ const app = express()
  * Body: ...
  */
 
-app.get('/games', (resquest, response) => {
+app.get('/games', (request, response) => {
   return response.json([]);
 });
 
-app.post('/ads', (resquest, response) => {
+app.post('/ads', (request, response) => {
   return response.status(201).json([]);
 });
 
-app.get('/games/:id/ads', (resquest, response) => {
-  //const gameId = resquest.params.id;
+app.get('/games/:id/ads', (request, response) => {
+  //const gameId = request.params.id;
 
   return response.json([
     { id: 1, name: 'Anúncio 1'},
@@ -28,8 +28,8 @@ app.get('/games/:id/ads', (resquest, response) => {
   ]);
 });
 
-app.get('/ads/:id/discord', (resquest, response) => {
-  //const adId = resquest.params.id;
+app.get('/ads/:id/discord', (request, response) => {
+  //const adId = request.params.id;
 
   return response.json([]);
 });
