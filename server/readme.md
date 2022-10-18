@@ -13,6 +13,7 @@ gameId
 name
 yearsPlaying
 discord
+weekDays
 hourStart
 hourEnd
 useVoiceChannel
