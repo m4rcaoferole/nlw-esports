@@ -1,6 +1,7 @@
 import express from 'express'
 import { PrismaClient } from '@prisma/client'
 import { convertHourStringToMinutes } from './utils/convert-hour-string-to-minutes';
+import { convertMinutesToHourString } from './utils/convert-minutes-string-to-hour';
 
 const app = express()
 
@@ -36,7 +37,6 @@ app.post('/games/:id/ads', async (request, response) => {
   const body: any = request.body;
   //Validação Zod Javascript
 
-
   const ad = await prisma.ad.create({
     data: {
       gameId,
@@ -68,13 +68,18 @@ app.get('/games/:id/ads', async (request, response) => {
     },
     where: {
       gameId,
+    },
+    orderBy: {
+      createA: 'desc',
     }
   })
 
   return response.json(ads.map(ad => {
     return {
       ...ad,
-      weekDays: ad.weekDays.split(',')
+      weekDays: ad.weekDays.split(','),
+      hourStart: convertMinutesToHourString(ad.hourStart),
+      hourEnd: convertMinutesToHourString(ad.hourEnd),
     }
   }));
 });
