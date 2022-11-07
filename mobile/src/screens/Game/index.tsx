@@ -1,9 +1,12 @@
-import { View } from "react-native";
+import { SafeAreaView } from "react-native";
+import { Background } from "../../components/Background";
 
 export function Game() {
   return (
-    <View>
+    <Background>
+      <SafeAreaView>
 
-    </View>
+      </SafeAreaView>
+    </Background>
   )
 }
