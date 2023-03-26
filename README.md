@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt=""Next Level Week Esports Logo" src="./.github/logoESports.png" />
+  <img src="./.github/logolESports.png" alt="Next Level Week Esports Logo" />
 </p>
 <br>
 
