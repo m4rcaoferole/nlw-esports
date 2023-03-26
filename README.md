@@ -1,6 +1,5 @@
 <p align="center">
-  <img src="./assets/img/nlw-esports-logo.png" alt="/>
-  <img alt=""Next Level Week Esports Logo" title="Logo Ignite" src="./.github/logoESports.png" />
+  <img alt=""Next Level Week Esports Logo" src="./.github/logoESports.png" />
 </p>
 <br>
 
