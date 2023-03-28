@@ -3,9 +3,9 @@
 </p>
 <br>
 
-No **NLW eSports** estamos desenvolvendo uma plataforma Web e Mobile, onde Gamers podem encontrar parceiros para seus jogos favoritos.
-O projeto foi desenvolvido com React/TypeScript e React Native com Expo. 
-Foi criado um server Fake que simulia os Games, na aplicação WEB, é possível criar anúncios para encontrar parceiros (ou duos).
+No **NLW eSports** desenvolvendo uma plataforma Web e Mobile, onde Gamers podem encontrar parceiros para seus jogos favoritos.
+O projeto foi desenvolvido com React/TypeScript e React Native com Expo.
+Foi criado um server Fake em Node.JS que simulia os Games a serem selecionados, na aplicação WEB, é possível criar anúncios para encontrar parceiros (ou duos).
 Já na aplicação mobile, é possível acessar esses anúncios e visualizar as informações pertinentes a cada jogador, 
 além de ser possível copiar para a área de transferência o nome de usuário do Discord do jogador para adicioná-lo a sua lista de amigos.
 
